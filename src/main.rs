@@ -24,9 +24,9 @@ use pingora::{
 #[derive(Parser)]
 struct Opts {
     addr: String,
-    #[clap(short, long, default_value = "500")]
+    #[clap(short = 'c', long, default_value = "500")]
     num_connection: usize,
-    #[clap(short, long, default_value = "1000000")]
+    #[clap(short = 'n', long, default_value = "1000000")]
     num_works: usize,
 }
 
